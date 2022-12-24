@@ -1,0 +1,21 @@
+body{
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+   
+}
+
+h1{
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+#container{
+    height:550px;
+    width: 520px;
+    background-color: aliceblue;
+    margin-left: 30%;
+    margin-bottom: 20%;
+    box-shadow: 2px 5px 10px 10px rgb(104, 102, 102);
+}
