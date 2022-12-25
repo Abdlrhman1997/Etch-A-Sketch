@@ -14,7 +14,7 @@ submitBttn.addEventListener('click',()=>{
         createGrid();
      }
      else{
-        divNumbers.style.fontSize = "24px";
+        divNumbers.style.fontSize = "20px";
         divNumbers.style.color = "red";
         divNumbers.style.margin = "0";
         divNumbers.textContent ="please enter a number from 1 to 64 !";

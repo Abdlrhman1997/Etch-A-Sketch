@@ -8,7 +8,7 @@ body{
 }
 
 #options{
-    background-color: bisque;
+    background-color: antiquewhite;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body{
 #inputBttn{
     display: flex;
 }
-#bttn{
+#bttn , #clear{
     width: 80px;
     height: 35px;
     border: none;
@@ -33,7 +33,25 @@ body{
     margin-left: 25px;
     margin-top: 4px;
 }
-.numbers{
+#clear{
+    margin-left: 232px;
+    margin-top: 20px;
+}
+
+#clear:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+#bttn:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .numbers{
     margin-left: 65px;
 }
 #number{
@@ -42,17 +60,11 @@ body{
     border-radius: 25px;
 }
 
-#bttn:active{
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-
 #sketch{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 p{
     font-size: 20px;
@@ -68,7 +80,7 @@ h1{
     height:500px;
     width: 500px;
     background-color: aliceblue;
-    box-shadow: 2px 5px 10px 10px rgb(104, 102, 102);
+    box-shadow: 1px 1px 3px 3px rgb(104, 102, 102);
     display: flex;
     flex-wrap: wrap;
     
