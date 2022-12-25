@@ -1,33 +1,76 @@
 body{
-    background-color: beige;
+    /* background-color: beige; */
+    background-color:antiquewhite;
     padding: 0px;
     margin: 0px;
+    display: flex;
    
 }
 
-#main{
+#options{
+    background-color: bisque;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    border: 2px solid #666;
+    margin-top: 110px;
+    padding: 10px;
+   
+}
+#inputBttn{
+    display: flex;
+}
+#bttn{
+    width: 80px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    border-radius: 5px;  
+    margin-left: 25px;
+    margin-top: 4px;
+}
+.numbers{
+    margin-left: 65px;
+}
+#number{
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+#bttn:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+#sketch{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 40px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+  
 }
 h1{
     font-size: 40px;
-    /* margin-left: 40%;
-    margin-top: 10px; */
+    
 }
 
 #container{
     height:500px;
     width: 500px;
     background-color: aliceblue;
-    /* margin-left: 30%;
-    margin-bottom: 20%; */
     box-shadow: 2px 5px 10px 10px rgb(104, 102, 102);
     display: flex;
     flex-wrap: wrap;
-    
-    /* fix the issue with space between items */
-      /* align-content:flex-start;  */ 
     
 }
 
