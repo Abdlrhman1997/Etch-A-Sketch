@@ -8,7 +8,7 @@ submitBttn.addEventListener('click',()=>{
      numvalue = Number(numInput.value);
      if( numvalue  >= 1 &&  numvalue <= 64){
         divNumbers.textContent = numInput.value + "x" + numInput.value;
-        removeDivs()
+        removeGrid()
         createGrid();
      }
      else{
@@ -35,7 +35,7 @@ function createGrid(){
     }
 }
 
-function removeDivs(){
+function removeGrid(){
     let squareDivs = document.querySelectorAll('.squareDiv');
     for(let i=0; i<squareDivs.length; i++){
         squareDivs[i].remove();
