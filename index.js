@@ -44,9 +44,14 @@ function createGrid(){
         newDiv.style.width = `${wH}px`;
         newDiv.style.margin = "0px";
         newDiv.className = "squareDiv";
-        
-        
-        newDiv.addEventListener('mouseover',()=> newDiv.style.backgroundColor=color);
+
+        newDiv.addEventListener('mousedown mouseup',(e)=>{
+            if(e.type == "mousedown"){
+                newDiv.style.backgroundColor=color;
+            }
+            
+        }
+        ) 
         divContainer.append(newDiv);
     }
 }
