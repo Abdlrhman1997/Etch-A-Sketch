@@ -3,7 +3,14 @@ let numInput = document.querySelector('#number');
 let divNumbers = document.querySelector('.numbers');
 let submitBttn = document.querySelector('#bttn');
 let clearBttn = document.querySelector('#clear');
+let colorPicker = document.querySelector('#colorPicker');
+let color = "#333";
 let numvalue = 16;
+
+colorPicker.addEventListener('input',(e)=>{
+    color = e.target.value;
+})
+
 
 clearBttn.addEventListener('click',()=>{
     removeGrid()
@@ -39,7 +46,7 @@ function createGrid(){
         newDiv.className = "squareDiv";
         
         
-        newDiv.addEventListener('mouseover',()=> newDiv.style.backgroundColor="blue");
+        newDiv.addEventListener('mouseover',()=> newDiv.style.backgroundColor=color);
         divContainer.append(newDiv);
     }
 }

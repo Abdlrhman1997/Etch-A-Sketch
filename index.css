@@ -60,6 +60,16 @@ body{
     border-radius: 25px;
 }
 
+#colorPicker{
+    width: 80px;
+    height: 80px;
+    border: none;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+#pickColor{
+    margin-left:0px;
+}
 #sketch{
     display: flex;
     align-items: center;
