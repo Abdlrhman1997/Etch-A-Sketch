@@ -2,7 +2,13 @@ let divContainer = document.querySelector('#container');
 let numInput = document.querySelector('#number');
 let divNumbers = document.querySelector('.numbers');
 let submitBttn = document.querySelector('#bttn');
+let clearBttn = document.querySelector('#clear');
 let numvalue = 16;
+
+clearBttn.addEventListener('click',()=>{
+    removeGrid()
+    createGrid();
+});
 
 submitBttn.addEventListener('click',()=>{
      numvalue = Number(numInput.value);
@@ -15,7 +21,7 @@ submitBttn.addEventListener('click',()=>{
      }
      else{
         divNumbers.style.fontSize = "20px";
-        divNumbers.style.color = "red";
+        divNumbers.style.color = "green";
         divNumbers.style.margin = "0";
         divNumbers.textContent ="please enter a number from 1 to 64 !";
      }
